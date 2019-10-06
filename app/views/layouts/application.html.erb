@@ -24,7 +24,7 @@
      <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <%= link_to root_path, class:"navbar-item" do %>
-          <h1 class="title is-5">iStor</h1>
+          <h1 class="title is-5">iStore</h1>
         <% end  %>
       <div class="navbar-burger burger" data-target="navbar">
         <span></span>
@@ -38,18 +38,10 @@
           <div class="navbar-item">
             <div class="field is-grouped">
 
-
-
-
-
-
-
-
-
-
+            
 
             <% if user_signed_in? %>
-              <%= link_to 'Sell', 'new_instrument_path', class: "navbar-item button is-dark" %>
+              <%= link_to 'Sell', new_instrument_path, class: "navbar-item button is-dark" %>
 
               <div class="navbar-item has-dropdown is-hoverable">
                 <%= link_to 'Account', edit_user_registration_path, class: "navbar-link" %>
